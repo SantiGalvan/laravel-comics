@@ -35,6 +35,10 @@
     {{-- Main --}}
     <main>
 
+        {{-- Section Jumbotron --}}
+        <section id="section-jumbotron">
+        </section>
+
         {{-- Section Content --}}
         <section id="section-content">
             <div class="container container-card">
