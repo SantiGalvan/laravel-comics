@@ -23,16 +23,10 @@
             </figure>
             <nav>
                 <ul class="header-list">
-                    <li class=""><a href="">Characters</a></li>
-                    <li class=""><a href="">Comics</a></li>
-                    <li class=""><a href="">Movies</a></li>
-                    <li class=""><a href="">Tv</a></li>
-                    <li class=""><a href="">Games</a></li>
-                    <li class=""><a href="">Collectibles</a></li>
-                    <li class=""><a href="">Videos</a></li>
-                    <li class=""><a href="">Fans</a></li>
-                    <li class=""><a href="">News</a></li>
-                    <li class=""><a href="">Shop</a></li>
+                    @foreach (config('header_menu') as $link)
+                    <li class="{{ Route::is($link['route_name']) ? 'current' : ''}}"><a href="">{{$link['text']}}</a></li>
+                    @endforeach
+
                 </ul>
             </nav>
         </div>
