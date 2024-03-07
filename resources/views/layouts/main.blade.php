@@ -22,7 +22,7 @@
     <main>
 
         {{-- Section Jumbotron --}}
-         <section id="section-jumbotron"></section>
+        <section id="section-jumbotron"></section>
 
         @yield('main-content')
     </main>
