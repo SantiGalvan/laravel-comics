@@ -5,8 +5,7 @@
 
 @section('main-content')
 
-        {{-- Section Jumbotron --}}
-        <section id="section-jumbotron"></section>
+
 
         {{-- Section Content --}}
         <section id="section-content">

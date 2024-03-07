@@ -20,6 +20,10 @@
 
     {{-- Main --}}
     <main>
+
+        {{-- Section Jumbotron --}}
+         <section id="section-jumbotron"></section>
+
         @yield('main-content')
     </main>
 
