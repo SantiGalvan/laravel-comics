@@ -19,6 +19,26 @@
     li {
         border-bottom: 4px solid transparent;
     }
+
+    img {
+        height: 80px;
+    }
+
+    .current {
+        border-bottom: 4px solid #0282f9;
+    }
+
+    .current a {
+        color: #0282f9;
+    }
+
+    li:hover {
+        border-bottom: 4px solid #0282f9;
+    }
+
+    li:hover a {
+        color: #0282f9;
+    }
 }
 
 .header-list {
@@ -32,24 +52,4 @@
 .header-list li a {
     display: flex;
     align-items: center;
-}
-
-img {
-    height: 80px;
-}
-
-.current {
-    border-bottom: 4px solid #0282f9;
-}
-
-.current a {
-    color: #0282f9;
-}
-
-li:hover {
-    border-bottom: 4px solid #0282f9;
-}
-
-li:hover a {
-    color: #0282f9;
 }
