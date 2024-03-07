@@ -4,21 +4,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-nav,
-ul,
-li {
-    height: 100%;
-}
+    nav,
+    ul,
+    li {
+        height: 100%;
+    }
 
-a {
-    color: black;
-    height: 100%;
-}
+    a {
+        color: black;
+        height: 100%;
+    }
 
-li {
-    border-bottom: 4px solid transparent;
+    li {
+        border-bottom: 4px solid transparent;
+    }
 }
 
 .header-list {
