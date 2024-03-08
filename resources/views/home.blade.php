@@ -10,7 +10,7 @@
         {{-- Section Content --}}
         <section id="section-content">
             <div class="container container-card">
-                @foreach (config('comics') as $comic)
+                @foreach ($comics as $comic)
                 <div class="dc-card">
                     <figure>
                         <img src="{{$comic['thumb']}}" alt="">
