@@ -1,5 +1,5 @@
 #section-comic {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .comic-container {
@@ -26,6 +26,64 @@
         text-align: justify;
     }
 }
+
+.comic-price {
+    background-color: #55ba59;
+    margin-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+
+    h4 {
+        color: rgba(255, 255, 255, 0.5);
+
+        span {
+            color: white;
+        }
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        border-right: 1px solid black;
+        flex-basis: 75%;
+
+        h4 {
+            color: rgba(255, 255, 255, 0.5);
+
+            span {
+                color: white;
+            }
+        }
+
+        .price-text {
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .check {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+
+        p {
+            margin: 0;
+            color: white;
+        }
+
+        i {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translateY(-15%);
+        }
+    }
+}
+
+
 
 .comic-gallery {
     text-align: right;
