@@ -13,8 +13,15 @@
         <div class="comic-container">
             <div class="comic-info">
                 <h1>{{$comic['title']}}</h1>
+                <div class="comic-price"></div>
+                <div class="comic-description">
+                    <p>{{$comic['description']}}</p>
+                </div>
             </div>
-            <div class="comic-gallery"></div>
+            <div class="comic-gallery">
+                <h4>Advertisement</h4>
+                <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="ADV">
+            </div>
         </div>
     </div>
 </section>
