@@ -10,12 +10,14 @@
         {{-- Section Content --}}
         <section id="section-content">
             <div class="container container-card">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                 <div class="dc-card">
-                    <figure>
-                        <img src="{{$comic['thumb']}}" alt="">
-                    </figure>
-                    <h3>{{$comic['title']}}</h3>
+                    <a href="{{route('comic', $index)}}">
+                        <figure>
+                            <img src="{{$comic['thumb']}}" alt="">
+                        </figure>
+                        <h3>{{$comic['title']}}</h3>
+                    </a>
                 </div>
                 @endforeach
             </div>
