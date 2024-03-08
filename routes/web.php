@@ -13,11 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route Home
 Route::get('/', function () {
     $comics = config('comics');
     return view('home', compact('comics'));
 })->name('home');
 
+// Route Comic
+Route::get('/comics/{index}', function ($index) {
+    $comics = config('comics');
+    return view('comic', ['comic' => $comics[$index]]);
+})->name('comic');
+
+// Route Characters
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
