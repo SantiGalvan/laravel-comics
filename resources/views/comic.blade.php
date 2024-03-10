@@ -13,7 +13,7 @@
 
 {{-- Section View --}}
 <section id="section-view">
-    <div class="container">
+    <div class="comic-container">
         <div class="card">
             <img src="{{$comic['thumb']}}" alt="">
             <h4>View Gallery</h4>
@@ -24,7 +24,6 @@
 
 {{-- Section Comic --}}
 <section id="section-comic">
-    <div class="container">
         <div class="comic-container">
             <div class="comic-info">
                 <h1>{{$comic['title']}}</h1>
@@ -49,11 +48,52 @@
                 <h4>Advertisement</h4>
                 <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="ADV">
             </div>
-        </div>
     </div>
 </section>
 
 {{-- Section Info --}}
-<section id="section-info"></section>
+<section id="section-info">
+    <div class="comic-container">
+        <div class="talent">
+            <div class="title">
+                <h4>Talent</h4>
+            </div>
+            <div class="authors">
+                <p class="name-title">Art By:</p>
+                <p class="text">
+                    @foreach ($comic['artists'] as $index => $artist)
+                        <span>{{$artist}}@if($index < count($comic['artists']) - 1), @else. @endif</span>
+                    @endforeach
+                </p>
+            </div>
+            <div class="writers">
+                <p class="name-title">Written By:</p>
+                <p class="text">
+                    @foreach ($comic['writers'] as $index => $writer)
+                        <span>{{$writer}}@if($index < count($comic['writers']) - 1), @else. @endif</span>
+                    @endforeach
+                </p>
+            </div>
+        </div>
+        <div class="specs">
+            <div class="title">
+                <h4>Specs</h4>
+            </div>
+            <div class="series">
+                <p class="name-title">Series:</p>
+                <p class="text">{{$comic['series']}}</p>
+            </div>
+            <div class="specs-price">
+                <p class="name-title">U.S. Price:</p>
+                <p class="text black">{{$comic['price']}}</p>
+            </div>
+            <div class="specs-date">
+                <p class="name-title">On Sale Date:</p>
+                <p class="text black">{{$comic['sale_date']}}</p>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 @endsection
