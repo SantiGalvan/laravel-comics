@@ -12,7 +12,15 @@
 @section('main-content')
 
 {{-- Section View --}}
-<section id="section-view"></section>
+<section id="section-view">
+    <div class="container">
+        <div class="card">
+            <img src="{{$comic['thumb']}}" alt="">
+            <h4>View Gallery</h4>
+            <span>Comic book</span>
+        </div>
+    </div>
+</section>
 
 {{-- Section Comic --}}
 <section id="section-comic">

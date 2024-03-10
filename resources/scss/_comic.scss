@@ -1,3 +1,46 @@
+#section-view {
+    height: 100px;
+    background-color: #0282f9;
+
+    .card {
+        height: 300px;
+        width: 180px;
+        position: relative;
+        left: 0;
+        bottom: 230px;
+        border: 1px solid white;
+
+        img {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        h4,
+        span {
+            text-transform: uppercase;
+            background-color: #49a8db;
+            color: white;
+            padding: 3px 5px;
+            font-weight: normal;
+            position: absolute;
+            font-size: 0.75rem;
+        }
+
+        h4 {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        span {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
 #section-comic {
     padding: 60px 0;
 }
